@@ -217,4 +217,10 @@ function generateRandomDiscountCodes(count) {
   return codes;
 }
 
+function showSupportNumber() {
+  const supportNumberDiv = document.getElementById('support-number');
+
+  // Toggle the display of the support number
+  supportNumberDiv.style.display = supportNumberDiv.style.display === 'none' ? 'block' : 'none';
+}
 

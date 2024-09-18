@@ -37,7 +37,7 @@
           </div>
           <div class="menu-btns">
             <a class="item" href="home.html#camps">
-              <i class="fas fa-bell"></i>
+              <i class="fas fa-home"></i>
               <span>کمپین ها</span>
             </a>            
             <a class="item item-active" href="#" onclick="showDiscountCodes()">
@@ -48,11 +48,15 @@
               <h4>کد های تخفیف:</h4>
               <ul id="code-list"></ul>
             </div>            
-    
-            <a class="item" href="">
-              <i class="fas fa-bell"></i>
+            <a class="item" href="#" onclick="showSupportNumber()">
+              <i class="fas fa-headset"></i>
               <span>پشتیبانی</span>
             </a>
+            <div id="support-number" style="display: none;">
+              <h4>شماره پشتیبانی:</h4>
+              <p id="support-phone">0912-345-6789</p>
+            </div>
+            
             <a class="item" href="">
               <i class="fas fa-bell"></i>
               <span>تیم تولید</span>
@@ -66,10 +70,6 @@
             <nav>
               <div class="right">
                 <i onclick="togglePanel()" class="fas fa-bars"></i>
-                <div class="search">
-                  <input type="text" />
-                  <i class="fas fa-search"></i>
-                </div>
               </div>
               <div class="left">
                 <a href=""><i class="fas fa-bell"></i></a>
@@ -78,7 +78,6 @@
               </div>
             </nav>
             <div class="header-message">
-              <h3>آخرین ورود دو روز پیش</h3>
               <a href="" class="lang-btn">فارسی</a>
             </div>
           </header>
