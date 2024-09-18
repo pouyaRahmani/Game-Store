@@ -188,3 +188,33 @@ function toggleWheel() {
   wheelContainer.style.display = (wheelContainer.style.display === 'none') ? 'block' : 'none';
 }
 
+function showDiscountCodes() {
+  const discountCodesDiv = document.getElementById('discount-codes');
+  const codeList = document.getElementById('code-list');
+
+  // Clear previous codes
+  codeList.innerHTML = '';
+
+  // Generate random discount codes
+  const codes = generateRandomDiscountCodes(5); // Generate 5 codes
+
+  codes.forEach(code => {
+    const li = document.createElement('li');
+    li.textContent = code;
+    codeList.appendChild(li);
+  });
+
+  // Toggle the display of discount codes
+  discountCodesDiv.style.display = discountCodesDiv.style.display === 'none' ? 'block' : 'none';
+}
+
+function generateRandomDiscountCodes(count) {
+  const codes = [];
+  for (let i = 0; i < count; i++) {
+    const randomCode = 'DISCOUNT-' + Math.random().toString(36).substring(2, 8).toUpperCase();
+    codes.push(randomCode);
+  }
+  return codes;
+}
+
+
