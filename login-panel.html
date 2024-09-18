@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login And Registration Form</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+          <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-google"></i>
+          <img src="assets/gp.png" alt="" />
+        </div>
+        <form id="login" class="input-group">
+          <div class="input-container">
+            <input type="text" class="input-field" required />
+            <span class="input-span">User Id</span>
+          </div>
+          <div class="input-container">
+            <input type="password" class="input-field" required />
+            <span class="input-span">Password</span>
+          </div>
+          <input type="checkbox" class="check-box" /><span>Remember Password</span>
+          <button type="submit" id="login-btn" class="submit-btn" >Log In</button>
+        </form>
+        <form id="register" class="input-group">
+          <div class="input-container">
+            <input type="text" class="input-field" required />
+            <span class="input-span">User Id</span>
+          </div>
+          <div class="input-container">
+            <input type="email" class="input-field" required />
+            <span class="input-span">Email Id</span>
+          </div>
+          <div class="input-container">
+            <input type="password" class="input-field" required />
+            <span class="input-span">Enter Password</span>
+          </div>
+          <input type="checkbox" class="check-box" /><span>I agree to the terms & conditions</span>
+          <button type="submit" class="submit-btn">Register</button>
+      </div>
+    </div>
+
+    <!-- Js section -->
+    <script>
+      var x = document.getElementById("login");
+      var y = document.getElementById("register");
+      var z = document.getElementById("btn");
+
+      function register() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+      }
+
+      function login() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0";
+      }
+
+      document.getElementById('login-btn').addEventListener('click', function() {
+            window.location.href = "home.html";  // Navigates to home.html
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/15f2610ed6.js" crossorigin="anonymous"></script>
+  </body>
+</html>

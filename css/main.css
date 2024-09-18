@@ -1,0 +1,28 @@
+@font-face{
+    font-family: iran;
+    src: url(../fonts/iran.ttf);
+}
+
+*{
+    direction: rtl;
+    font-family: iran;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-size: 16px ;
+    margin: 0px ;
+}
+
+a{
+    text-decoration: none ;
+}
+
+.slider .slides img{
+    height: 600px;
+    object-fit: cover;
+}
