@@ -57,10 +57,16 @@
               <p id="support-phone">0912-345-6789</p>
             </div>
             
-            <a class="item" href="">
-              <i class="fas fa-bell"></i>
-              <span>تیم تولید</span>
+            <a class="item" href="#" onclick="showFavorites()">
+              <i class="fas fa-heart"></i>
+              <span>علاقه مندی ها</span>
             </a>
+            <div id="favorites" style="display: none;">
+              <h4>علاقه مندی ها:</h4>
+              <ul id="favorites-list">
+                <li>هیچ چیزی به علاقه مندی ها اضافه نشده است.</li>
+              </ul>
+            </div>            
           </div>
         </section>
       </div>
@@ -72,9 +78,19 @@
                 <i onclick="togglePanel()" class="fas fa-bars"></i>
               </div>
               <div class="left">
-                <a href=""><i class="fas fa-bell"></i></a>
-                <a href=""><i class="fas fa-cog"></i></a>
-                <a href=""><i class="fas fa-power-off"></i></a>
+                <a href="javascript:void(0);" onclick="toggleSettings()">
+                  <i class="fas fa-cog"></i>
+                </a>
+                <div id="settings-dropdown" style="display: none;">
+                  <ul>
+                    <li><a href="profile.html">ویرایش پروفایل</a></li>
+                    <li><a href="privacy.html">تنظیمات حریم خصوصی</a></li>
+                    <li><a href="notifications.html">تنظیمات اعلان ها</a></li>
+                  </ul>
+                </div>
+                <a href="javascript:void(0);" onclick="logout()">
+                  <i class="fas fa-power-off"></i>
+                </a>                
               </div>
             </nav>
             <div class="header-message">
@@ -101,10 +117,6 @@
               <div class="head">
                 <div class="right">
                   امتیاز شما
-                </div>
-                <div class="left">
-                  <i class="fas fa-cog"></i>
-                  <i class="fas fa-redo"></i>
                 </div>
               </div>
               <div class="content">

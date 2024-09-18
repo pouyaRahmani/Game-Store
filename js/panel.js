@@ -224,3 +224,41 @@ function showSupportNumber() {
   supportNumberDiv.style.display = supportNumberDiv.style.display === 'none' ? 'block' : 'none';
 }
 
+function showFavorites() {
+  const favoritesDiv = document.getElementById('favorites');
+  const favoritesList = document.getElementById('favorites-list');
+
+  // Clear previous favorites (if any)
+  favoritesList.innerHTML = '';
+
+  // Example favorite items (you can replace this with actual data)
+  const favoriteItems = getFavoriteItems(); // Function to get the favorite items
+
+  // Check if there are any favorite items
+  if (favoriteItems.length === 0) {
+    favoritesList.innerHTML = '<li>هیچ چیزی به علاقه مندی ها اضافه نشده است.</li>';
+  } else {
+    favoriteItems.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = item;
+      favoritesList.appendChild(li);
+    });
+  }
+
+  // Toggle the display of the favorites section
+  favoritesDiv.style.display = favoritesDiv.style.display === 'none' ? 'block' : 'none';
+}
+
+// Example function to get favorite items (replace this with your actual logic)
+function getFavoriteItems() {
+  // In a real application, this might fetch data from an API or local storage
+  return []; // Currently returns an empty array for no favorites
+}
+function logout() {
+  window.location.href = 'home.html'; // Redirects to home.html
+}
+function toggleSettings() {
+  const settingsDropdown = document.getElementById('settings-dropdown');
+  settingsDropdown.style.display = settingsDropdown.style.display === 'none' ? 'block' : 'none';
+}
+
