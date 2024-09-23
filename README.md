@@ -20,7 +20,7 @@ Welcome to **GameStore**, a modern and responsive website designed to sell video
 
 | Home Page | Login Page | Panel Page |
 | --------- | ---------- | ---------- |
-| ![Home Screenshot](/images/home.png) | ![Login Screenshot](/images/login.png) | ![Panel Screenshot](/images/panel.png) |
+| ![Home Screenshot](/images/home.jpg) | ![Login Screenshot](/images/login.png) | ![Panel Screenshot](/images/panel.png) |
 
 ---
 
