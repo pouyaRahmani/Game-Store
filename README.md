@@ -18,14 +18,9 @@ Welcome to **GameStore**, a modern and responsive website designed to sell video
 
 ## 🖼️ Screenshots
 
-### Home Page
-![Home Screenshot](/images/home.png)
-
----
-
-### Login and Panel Pages
-
-<div style="display: flex; justify-content: center; gap: 10px;"> <img src="/images/login.png" alt="Login Screenshot" width="45%" /> <img src="/images/panel.png" alt="Panel Screenshot" width="45%" /> </div>
+| Home Page | Login Page | Panel Page |
+| --------- | ---------- | ---------- |
+| ![Home Screenshot](/images/home.png) | ![Login Screenshot](/images/login.png) | ![Panel Screenshot](/images/panel.png) |
 
 ---
 
