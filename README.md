@@ -11,7 +11,6 @@ Welcome to **GameStore**, a modern and responsive website designed to sell video
 - [Technologies Used](#-technologies-used)
 - [Game Rating Charts](#-game-rating-charts)
 - [Setup & Installation](#️-setup--installation)
-- [Live Demo](#-live-demo)
 - [Contributing](#-contributing)
 - [License](#️-license)
 
@@ -56,19 +55,13 @@ The **User Panel** features charts showing the top-rated games on the platform, 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/GameStore.git
+   git clone https://github.com/pouyaRahmani/Game-Store.git
    ```
 2. Open the project directory:
    ```bash
    cd GameStore
    ```
 3. Open `index.html` in your favorite browser to explore the website.
-
----
-
-## 🌐 [Live Demo](#-live-demo)
-
-Check out the live version of the website: [GameStore Demo](https://your-demo-link.com)
 
 ---
 
